@@ -1,0 +1,32 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.SobrePage"
+             Title="Sobre"
+			 BackgroundImageSource="backgroundsobre.png"
+             BackgroundColor="White">
+
+	<VerticalStackLayout Padding="20" Spacing="10" VerticalOptions="Center">
+		<Frame BackgroundColor="Black"
+               CornerRadius="10"
+               Padding="20"
+               HasShadow="True"
+               HorizontalOptions="Center"
+               VerticalOptions="Center">
+			<VerticalStackLayout Spacing="10">
+				<Label Text="Desenvolvedor: Luigi Gastalho Delarissa"
+                       FontSize="20"
+                       TextColor="White"
+                       HorizontalOptions="Center" />
+				<Label Text="Ano de Desenvolvimento: 2023 - 2025"
+                       FontSize="20"
+                       TextColor="White"
+                       HorizontalOptions="Center" />
+				<Button Text="Voltar"
+                        Clicked="OnVoltarClicked"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        HorizontalOptions="Center" />
+			</VerticalStackLayout>
+		</Frame>
+	</VerticalStackLayout>
+</ContentPage>
